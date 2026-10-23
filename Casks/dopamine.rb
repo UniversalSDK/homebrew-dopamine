@@ -1,14 +1,14 @@
 cask "dopamine" do
-  version "1.2.1"
-  sha256 "6d7ffba5a0b40032ff79a26d4ab0490e43f1fd4cf4bb207d7bed3baeafe2cb30"
+  version "1.2.2"
+  sha256 "cd7730e1e69abecf8e1a34adb484c90e499a6795fe637c0cc3bbce166df9461b"
 
-  url "https://github.com/UniversalSDK/Dopamine/releases/download/v#{version}/Dopamine.dmg"
+  url "https://dopamine.33rd.pro/Dopamine.dmg"
   name "Dopamine"
   desc "Keep-awake power utility with closed-lid display backlight cutoff for Apple Silicon"
   homepage "https://dopamine.33rd.pro"
 
   auto_updates true
-  depends_on macos: :monterey
+  depends_on macos: ">= :monterey"
   depends_on arch: :arm64
 
   app "Dopamine.app"
