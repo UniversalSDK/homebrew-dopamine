@@ -4,11 +4,11 @@ cask "dopamine" do
 
   url "https://github.com/UniversalSDK/Dopamine/releases/download/v#{version}/Dopamine.dmg"
   name "Dopamine"
-  desc "Keep-awake power utility with closed-lid display backlight cutoff for Apple Silicon"
-  homepage "https://dopamine.33rd.pro"
+  desc "Keep-awake utility with closed-lid backlight cutoff for Apple Silicon"
+  homepage "https://dopamine.33rd.pro/"
 
   auto_updates true
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
   depends_on arch: :arm64
 
   app "Dopamine.app"
